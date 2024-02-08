@@ -28,4 +28,7 @@ switch(num1){
 
 const amount = 20;
 
+while (amount > 0){
+    console.log("hey i am zainab")
+}
 
