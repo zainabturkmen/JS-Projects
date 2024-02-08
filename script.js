@@ -7,4 +7,5 @@ function myFunction(name, age){
 myFunction("Zainab", "21")
 myFunction("bo", "23")
 myFunction("Znab", "21")
+
 // console.log(myFunction("Zainab", "21"));
