@@ -28,9 +28,15 @@ switch(num1){
 
 let amount = 20;
 
-while (amount >  0){
-    console.log(`hey i am Zainab ${amount}`);
-    amount--;
-}
+// while (amount >  0){
+//     console.log(`hey i am Zainab ${amount}`);
+//     amount--;
+// }
+
+do{
+    console.log(`hey i am ${amount}`);
+    amount++;
+} while (amount < 30)
+
 
 
