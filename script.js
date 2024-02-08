@@ -33,10 +33,24 @@ let amount = 20;
 //     amount--;
 // }
 
+// do loop
+
 do{
     console.log(`hey i am`);
     amount++;
 } while (amount > 30)
+
+// hey I am for loop
+
+for(let i = 0; i < 1; i++){
+    console.log("Hi");
+}
+
+
+
+
+
+
 
 
 
