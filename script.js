@@ -34,9 +34,9 @@ let amount = 20;
 // }
 
 do{
-    console.log(`hey i am ${amount}`);
+    console.log(`hey i am`);
     amount++;
-} while (amount < 30)
+} while (amount > 30)
 
 
 
