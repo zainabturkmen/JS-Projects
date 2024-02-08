@@ -24,3 +24,8 @@ switch(num1){
 }
 
 
+// While loop
+
+const amount = 20;
+
+
