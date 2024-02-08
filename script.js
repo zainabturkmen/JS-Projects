@@ -1,6 +1,6 @@
 
 
-const num1 = 2;
+const num1 = 4;
 const num2 = 6;
 
 // if(num1 < num2){
