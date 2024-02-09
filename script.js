@@ -52,4 +52,13 @@ const myArray = ["bob", "nani", "gogo", "bibi"]
 
 const myFriends = ["gul", "naz,", "Pary"]
 
+const result = [];
 
+for(let i=1; i < myArray.length; i++){
+    console.log(i)
+    console.log(myArray[i])
+    result.push(`${myArray[i]} ${myFriends[i]}`)
+
+}
+
+console.log(result)
