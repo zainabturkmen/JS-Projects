@@ -52,7 +52,7 @@ const myArray = ["bob", "nani", "gogo", "bibi"]
 
 const myFriends = ["gul", "naz,", "Pary"]
 
-const result = [];
+const result = [];  
 
 for(let i=1; i < myArray.length; i++){
     console.log(i)
