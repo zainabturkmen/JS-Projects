@@ -52,5 +52,4 @@ const myArray = ["bob", "nani", "gogo", "bibi"]
 
 const myFriends = ["gul", "naz,", "Pary"]
 
-const result = myFriends.concat(myArray)
-console.log(result);
+
