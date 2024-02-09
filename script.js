@@ -61,4 +61,3 @@ for(let i=1; i < myArray.length; i++){
 }
 
 console.log(result)
-
