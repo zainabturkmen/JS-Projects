@@ -60,6 +60,4 @@ for(let i=1; i < myArray.length; i++){
     result.push(`${myArray[i]} ${myFriends[i]}`)
 
 }
-
 console.log(result)
-
