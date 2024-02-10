@@ -17,3 +17,9 @@ const myArrays = ["johne", 6, "nice", true];
 myArrays.forEach( item => {
     console.log(item)
 })
+
+const monthds = ['jan', 'feb', 'mar', 'apr']
+
+const date = new Date()
+
+console.log(date);
