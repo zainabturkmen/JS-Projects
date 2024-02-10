@@ -21,5 +21,6 @@ myArrays.forEach( item => {
 const monthds = ['jan', 'feb', 'mar', 'apr']
 
 const date = new Date()
+const mydate = date.getMonth()
 
-console.log(date);
+console.log(monthds[mydate]);
