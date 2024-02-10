@@ -17,3 +17,4 @@ const myArrays = ["johne", 6, "nice", true]
 myArrays.forEach(function(item){
     console.log(item);
 })
+
