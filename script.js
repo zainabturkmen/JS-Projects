@@ -20,3 +20,11 @@ ul.innerHTML = ` <li>heheh</li>
 <li>heheh</li>`
 
 document.body.appendChild(ul)
+
+const btn = document.querySelector('#btn')
+
+const heading = document.querySelector('h2')
+
+btn.addEventListener('click', () => {
+    heading.classList.toggle('red');
+})
