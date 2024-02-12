@@ -10,3 +10,13 @@ const text = document.createTextNode('hey i am zainab')
 bodyDiv.append(text)
 
 document.body.appendChild(bodyDiv)
+
+const ul = document.createElement('ol')
+
+ul.innerHTML = ` <li>heheh</li>
+<li>heheh</li>
+<li>heheh</li>
+<li>heheh</li>
+<li>heheh</li>`
+
+document.body.appendChild(ul)
