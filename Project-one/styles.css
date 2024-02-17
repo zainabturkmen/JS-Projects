@@ -213,7 +213,7 @@ Navbar
 }
 @media screen and (min-width: 800px) {
   .nav-center {
-    max-width: 1170px;
+    /* max-width: 1170px; */
     margin: 0 auto;
     display: flex;
     align-items: center;
