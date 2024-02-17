@@ -9,6 +9,6 @@ sidebarToggle.addEventListener("click", function(){
 })
 
 closeBtn.addEventListener("click", function(){
-    // sidebar.classList.remove("show-sidebar");
-    sidebar.classList.toggle("show-sidebar");
+    sidebar.classList.remove("show-sidebar");
+    // sidebar.classList.toggle("show-sidebar");
 })
