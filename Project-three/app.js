@@ -15,5 +15,3 @@ closeBtn.addEventListener('click', function(){
     modalOverlay.classList.toggle("open-modal")
 });
 
-
-
