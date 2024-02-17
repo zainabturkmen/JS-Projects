@@ -12,5 +12,5 @@ modalBtn.addEventListener('click', function(){
 })
 
 closeBtn.addEventListener('click', function(){
-    modalOverlay.classList.remove()
+    modalOverlay.classList.remove("close-modal")
 })
