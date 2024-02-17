@@ -159,7 +159,7 @@ Navbar
 nav {
   background: var(--clr-white);
   box-shadow: var(--light-shadow);
-}
+} 
 
 .nav-center{
   box-shadow: var(--light-shadow);
