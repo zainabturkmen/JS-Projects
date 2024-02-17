@@ -158,7 +158,7 @@ Navbar
 */
 .nav-center{
   box-shadow: var(--light-shadow);
-}
+}  
 
 .nav-header {
   display: flex;
