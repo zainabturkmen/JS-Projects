@@ -1,16 +1,16 @@
 /*
-===============     
-Fonts  
+=============== 
+Fonts
 ===============
 */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap');
-  
-/*  
+
+/*
 =============== 
-Variables      
+Variables
 ===============
-*/    
-  
+*/
+
 :root {
   /* dark shades of primary color*/
   --clr-primary-1: hsl(205, 86%, 17%);
@@ -149,17 +149,21 @@ main {
   min-height: 100vh;
   display: grid;
   place-items: center;
-}        
-             
-/*      
+}
+ 
+/*  
 =============== 
 Navbar  
-===============  
+===============
 */
+/* nav {
+  /* background: var(--clr-white); */
+  /* box-shadow: var(--light-shadow); */
+}  
 
 .nav-center{
   box-shadow: var(--light-shadow);
-}  
+}
 
 .nav-header {
   display: flex;
