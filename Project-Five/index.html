@@ -5,9 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <title>Nav</title>
+
+    <style>
+              
+        .six-nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(32, 31, 31);
+            /* margin: -.1em -.1em; */
+            height: 55px;
+            margin: -.5em;
+        }
+
+
+        .six-nav ul{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1em;
+        }
+
+        .six-nav ul li{
+            list-style-type: none;
+        }
+
+        .six-nav img{
+            margin-bottom: -.3em;
+}
+
+        .six-nav ul li a{
+            font-size: .9em;
+            color: white;
+            text-decoration: none;
+        }
+
+        .navs{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 2em;
+        }
+
+        .navs a{
+            text-decoration: none;
+            color: aliceblue;
+            margin-right: 1em;
+            font-size: .9em;
+        }
+    </style>
+
 </head>
 <body>
-    <div class="sixth-nav">
+    <nav class="six-nav">
                             
         <ul>
             <li><img src="logo-champz.png" alt=""></li>
@@ -16,10 +67,10 @@
             <li><a href="#">Pricing</a></li>
        </ul>
        <ul class="navs">
-           <a href="#" class="log-in">Log in</a>
+           <a href="#">Log in</a>
            <a href="#" class="contact-Sales">contact-Sales</a>
            <a href="#" class="get-started">Get started__it's free</a>
        </ul>
-    </div>
+    </nav>
 </body>
 </html>
