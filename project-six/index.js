@@ -1,7 +1,7 @@
 
 // 
 // <!-- Initialize Swiper -->
-import {Swiper} from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+import {Swiper} from "./swipper"
 
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
