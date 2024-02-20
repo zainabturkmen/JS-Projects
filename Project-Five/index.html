@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <title>Nav</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <style>
               
-        .six-nav{
+        nav{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -19,65 +22,30 @@
         }
 
 
-        .six-nav ul{
+        nav ul{
             display: flex;
             flex-direction: row;
-            align-items: center;
+            /* justify-content: space-around; */
             gap: 1em;
         }
-
-        .six-nav ul li{
-            list-style-type: none;
-        }
-
-        .six-nav img{
-            margin-bottom: -.3em;
-}
-
-        .six-nav ul li a{
-            font-size: 23px;
-            color: white;
-            text-decoration: none;
-            font-family: 'Courier New', Courier, monospace;
-        }
-
-        .navs{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 2em;
-        }
-
-        .navs a{
-            text-decoration: none;
-            color: aliceblue;
-            margin-right: 1em;
-            font-size: 23px;
-            font-family: 'Courier New', Courier, monospace;
-        }
-
-        .navs a:nth-child(3){
-            background-color: rgb(8, 113, 78);
-            padding: .5em 1em;
-            border-radius: 10px;
-        }
+    
     </style>
 
 </head>
 <body>
-    <nav class="six-nav">
-                            
+    <nav>                      
         <ul>
             <li><img src="logo-champz.png" alt=""></li>
+             <li><a href="#">Products</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Pricing</a></li>
+        </ul>
+
+         <ul>
             <li><a href="#">Products</a></li>
            <li><a href="#">Resources</a></li>
             <li><a href="#">Pricing</a></li>
        </ul>
-       <ul class="navs">
-           <a href="#">Log in</a>
-           <a href="#">contact-Sales</a>
-           <a href="#">Get started__it's free</a>
-       </ul>
-    </nav>
+   </nav>
 </body>
 </html>
