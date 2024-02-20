@@ -1,7 +1,7 @@
 
 // 
 // <!-- Initialize Swiper -->
-import {Swiper} from "./swipper"
+import Swiper from "./swipper.js"
 
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
