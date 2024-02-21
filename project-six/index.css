@@ -1,37 +1,47 @@
-@import url("https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css");
-
 html,
 body {
-  position: relative;
-  height: 100%;
+    position: relative;
+    height: 100%;
 }
 
 body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
 }
 
 .swiper {
-  width: 100%;
-  height: 100%;
+    width: 600px;
+    height: 350px;
+    position: absolute;
+    left: 30%;
+    top: 45%;
+    margin-top: -150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    font-size: 60px;
+    border-radius: 2em;
 }
 
 .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 1em;
 }
