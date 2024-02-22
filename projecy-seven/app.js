@@ -7,8 +7,8 @@
     if(id){
         // remove active from other or all
         btns.forEach(function(btn){
-            btn.classList.remove("active");
-            e.target.classList.add("active")
+            btn.classList.add("active");
+            e.target.classList.remove("active") 
         });
         // hide other articles
         articles.forEach(function(article){
