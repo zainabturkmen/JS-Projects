@@ -12,7 +12,7 @@
         });
         // hide other articles
         articles.forEach(function(article){
-            article.classList.remove("active");
+            article.classList.remove("");
         });
         const element = document.getElementById(id);
         element.classList.add("active");
