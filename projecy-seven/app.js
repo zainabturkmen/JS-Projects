@@ -5,7 +5,7 @@
  about.addEventListener("click", function(e){
     const id = e.target.dataset.id;
     if(id){
-        // remove active from other or all buttons 
+        // remove active from other or all
         btns.forEach(function(btn){
             btn.classList.remove("active");
             e.target.classList.add("active")
