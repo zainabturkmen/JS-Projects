@@ -22,3 +22,4 @@ const weekdays = [
   "Saturday",
 ];
 
+const giveaway = document.querySelector(".giveaway");
