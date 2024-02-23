@@ -26,7 +26,7 @@ const giveaway = document.querySelector(".giveaway");
 const deadline = document.querySelector(".deadline");
 const items = document.querySelectorAll(".deadline-format h4");
 
-let futureDate = new Date(2024, 2, 22, 19, 3, 0); 
+let futureDate = new Date(2024, 2, 23, 19, 3, 0); 
 
 const year = futureDate.getFullYear();
 const hours = futureDate.getHours();
@@ -72,8 +72,13 @@ function getRemainingTime(){
     item.innerHTML = format(value[index]);
   });
 
+  if(t<0){
+    clearInterval(countDown);
+    deadline.innerHTML = `<h4 class="expired">sorry, this giveaway expired</h4>
+    `;
+  }
 };
 
-const 
+let countDown = setInterval(getRemainingTime, 1000);
 
 getRemainingTime()
