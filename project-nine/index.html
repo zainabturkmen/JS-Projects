@@ -9,14 +9,43 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      padding: 20px;
-      background-color: #fff;
-      border: 1px solid #ccc;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      width: 80%;
+      height: 80%;
+      max-width: 900px;
+      max-height: 600px;
+      background-color: white;
       z-index: 9999;
+      padding: 20px;
+      box-sizing: border-box;
+      overflow: auto;
+      box-shadow: .1em .1em .3em black;
+      border-radius: 10px;
+    }
+
+    #uploadButton{
+      margin-right: 10px;
+      padding: 8px 16px;
+      background-color: #6f638f;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      margin: 15em auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      padding: 1em 2em;
+      border-radius: 2em;
+    }
+
+    .popup-content {
+      display: flex;
+      flex-direction: column;
     }
     .popup-buttons {
-      margin-top: 20px;
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 20px;
     }
     .popup-button {
       margin-right: 10px;
@@ -25,7 +54,41 @@
       color: #fff;
       border: none;
       cursor: pointer;
+      border-radius: 10px;
     }
+    .storage-area {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .storage-image {
+      width: 200px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+    .message {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #4caf50;
+    }
+    .close-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 24px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    .popup-title{
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #333;
+        margin-top: 0;
+
+    }
+
   </style>
 </head>
 <body>
@@ -34,11 +97,18 @@
 
   <!-- Popup -->
   <div id="popup" class="popup">
-    <p>Select an option:</p>
-    <div class="popup-buttons">
-      <button class="popup-button" id="stockImagesButton">Stock Images</button>
-      <button class="popup-button" id="storageButton">Storage</button>
-      <button class="popup-button" id="uploadImagesButton">Upload Images</button>
+      <div class="popup-content">
+        <h1 class="popup-title">Upload Images</h1>
+        <button class="close-button" id="closeButton">&times;</button>
+      <div class="popup-buttons">
+        <button class="popup-button" id="stockImagesButton">Stock Images</button>
+        <button class="popup-button" id="storageButton">Storage</button>
+        <button class="popup-button" id="uploadImagesButton">Upload Images</button>
+      </div>
+      <div class="message" id="uploadMessage"></div>
+      <div class="storage-area" id="popupStorageArea">
+        <!-- Images will be added dynamically here -->
+      </div>
     </div>
   </div>
 
@@ -49,24 +119,115 @@
     const stockImagesButton = document.getElementById("stockImagesButton");
     const storageButton = document.getElementById("storageButton");
     const uploadImagesButton = document.getElementById("uploadImagesButton");
+    const storageArea = document.querySelector(".storage-area");
+    const popupStorageArea = document.getElementById("popupStorageArea");
+    const uploadMessage = document.getElementById("uploadMessage");
+    const closeButton = document.getElementById("closeButton");
+
+    function apperstockImages(){
+        popupStorageArea.innerHTML = ""; // Clear existing images
+
+        const stockImageUrls = [
+        "./images/7.png",
+        "./images/8.png",
+        "./images/9.png",
+        "./images/aGuy.png",
+        "./images/aGuysmiling.jpg",
+        "./images/back-img1.png",
+        "./images/back-img2.png",
+        "./images/image.png",
+        "./images/salad-img.jpeg",
+        // Add more stock image URLs as needed
+        ];
+
+        stockImageUrls.forEach(function(url) {
+        const imageElement = document.createElement("img");
+        imageElement.src = url;
+        imageElement.classList.add("storage-image");
+        popupStorageArea.appendChild(imageElement);
+        });
+    }
 
     uploadButton.addEventListener("click", function() {
-      popup.style.display = "block";
+      popup.style.display = "flex";
+    });
+
+    closeButton.addEventListener("click", function() {
+      popup.style.display = "none";
     });
 
     stockImagesButton.addEventListener("click", function() {
       // Handle stock images button click
       console.log("Stock Images button clicked");
+      // Add your custom functionality here
+      // Example: Add stock images to the popup storage area
+      apperstockImages();
+     
     });
+
+    apperstockImages();
+
 
     storageButton.addEventListener("click", function() {
       // Handle storage button click
       console.log("Storage button clicked");
+      // Add your custom functionality here
+      // Example: Add sample images to the storage area
+      storageArea.innerHTML = ""; // Clear existing images
+
+      const imageUrls = [
+        "./images/1.png",
+        "./images/2.png",
+        "./images/3.png",
+        "./images/4.png",
+        "./images/5.png",
+        "./images/6.png",
+        "./images/7.png",
+        "./images/8.png",
+        "./images/9.png",
+        "./images/aGuy.png",
+        "./images/aGuysmiling.jpg",
+        "./images/back-img1.png",
+        // Add more image URLs as needed
+      ];
+
+      imageUrls.forEach(function(url) {
+        const imageElement = document.createElement("img");
+        imageElement.src = url;
+        imageElement.classList.add("storage-image");
+        storageArea.appendChild(imageElement);
+      });
     });
 
     uploadImagesButton.addEventListener("click", function() {
       // Handle upload images button click
       console.log("Upload Images button clicked");
+      // Add your custom functionality here
+      // Example: Trigger file upload dialog
+      const fileInput = document.createElement("input");
+      fileInput.type = "file";
+      fileInput.multiple = true;
+      fileInput.addEventListener("change", function(event) {
+        const selectedFiles = Array.from(event.target.files);
+        console.log("Selected files:", selectedFiles);
+        // Add uploaded images to the popup storage area
+        selectedFiles.forEach(function(file) {
+          const reader = new FileReader();
+          reader.onload = function() {
+            const imageUrl = reader.result;
+            const imageElement = document.createElement("img");
+            imageElement.src = imageUrl;
+            imageElement.classList.add("storage-image");
+            popupStorageArea.appendChild(imageElement);
+            const message = document.createElement("div");
+            message.textContent = "Image uploaded successfully";
+            message.classList.add("message");
+            popupStorageArea.insertAdjacentElement("beforebegin", message);
+          };
+          reader.readAsDataURL(file);
+        });
+      });
+      fileInput.click();
     });
   </script>
 </body>
