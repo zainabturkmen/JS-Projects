@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* CSS styles for the popup */
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      z-index: 9999;
+    }
+    .popup-buttons {
+      margin-top: 20px;
+    }
+    .popup-button {
+      margin-right: 10px;
+      padding: 8px 16px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <!-- Button to trigger the popup -->
+  <button id="uploadButton">Upload Area</button>
+
+  <!-- Popup -->
+  <div id="popup" class="popup">
+    <p>Select an option:</p>
+    <div class="popup-buttons">
+      <button class="popup-button" id="stockImagesButton">Stock Images</button>
+      <button class="popup-button" id="storageButton">Storage</button>
+      <button class="popup-button" id="uploadImagesButton">Upload Images</button>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript to handle the popup functionality
+    const uploadButton = document.getElementById("uploadButton");
+    const popup = document.getElementById("popup");
+    const stockImagesButton = document.getElementById("stockImagesButton");
+    const storageButton = document.getElementById("storageButton");
+    const uploadImagesButton = document.getElementById("uploadImagesButton");
+
+    uploadButton.addEventListener("click", function() {
+      popup.style.display = "block";
+    });
+
+    stockImagesButton.addEventListener("click", function() {
+      // Handle stock images button click
+      console.log("Stock Images button clicked");
+    });
+
+    storageButton.addEventListener("click", function() {
+      // Handle storage button click
+      console.log("Storage button clicked");
+    });
+
+    uploadImagesButton.addEventListener("click", function() {
+      // Handle upload images button click
+      console.log("Upload Images button clicked");
+    });
+  </script>
+</body>
+</html>
