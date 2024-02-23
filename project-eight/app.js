@@ -59,13 +59,21 @@ function getRemainingTime(){
   let seconds =  Math.floor(( t % oneMinute) / 1000);
 
   // set values arrays;
-  const value = [days, hours, minutes, seconds];
+  const value = [days, hours, minutes, seconds]
 
-  function format(){
-    items.forEach(function(item, index){
-      item.innerHTML = value[index];
-    });
+  function format(item){
+    if(item < 10){
+      return ( item = `0${item}`);
+    }
+    return item;
   };
+
+  items.forEach(function(item, index){
+    item.innerHTML = format(value[index]);
+  });
+
 };
+
+const 
 
 getRemainingTime()
