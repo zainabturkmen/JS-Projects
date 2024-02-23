@@ -26,12 +26,13 @@ const giveaway = document.querySelector(".giveaway");
 const deadline = document.querySelector(".deadline");
 const items = document.querySelectorAll(".deadline-format h4");
 
-let futureDate = new Date(2024, 2, 23, 19, 3, 0); 
-
-const year = futureDate.getFullYear();
-const hours = futureDate.getHours();
-const mins = futureDate.getMinutes();
+let hours = futureDate.getHours();
+let year = futureDate.getFullYear();
+let mins = futureDate.getMinutes();
 // const secs = futureDate.getSeconds();
+
+const futureDate = new Date(year, hours, mins + 2024, 2, 23, 3); 
+
 
 let month = futureDate.getMonth()
 month = months[month];
