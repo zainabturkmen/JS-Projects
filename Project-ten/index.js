@@ -16,7 +16,7 @@ const clickMe = () =>{
     }).join("")
 
     container.innerHTML = newPeople;
-}
+};
 
 
 //  const clickMe = () => {
