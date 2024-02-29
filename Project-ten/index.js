@@ -6,5 +6,15 @@ const People = [
     {name: "su", lastmane:"susi", age:"23"},
 ]
 
-const container
+const container = document.querySelector("body");
+
+const btn = document.querySelector(".btn");
+
+ const clickMe = () => {
+
+ }
+ 
+btn.addEventListener("click", ()=>{
+
+})
 
