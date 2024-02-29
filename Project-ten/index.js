@@ -7,22 +7,7 @@ const container = document.querySelector(".container");
 
 const btn = document.querySelector(".btn");
 
-const clickMe = () =>{
-    const newPeople= people.map((person)=>{
-    return `<p>${person.name} ${person.age}</p>`
-    }).join("")
 
-    container.innerHTML = newPeople;
-};
-
-
-//  const clickMe = () => {
-//     const newPeople = people.map((person)=> {
-//         const {name, age} = person
-//         return `<p>${name} ${age}</p>`;
-//     }).join("")
-//     container.innerHTML = newPeople;
-//  };
 
 btn.addEventListener("click", ()=>{
     clickMe();
