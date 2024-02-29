@@ -12,7 +12,8 @@ const btn = document.querySelector(".btn");
 
  const clickMe = () => {
     const newPeople = people.map((person)=> {
-        console.log(person);
+        // console.log(person);
+        // person.textContent = person
     });
  };
 
