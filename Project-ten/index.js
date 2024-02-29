@@ -6,7 +6,7 @@ const People = [
     {name: "su", lastmane:"susi", age:"23"},
 ];
 
-const container = document.querySelector("body");
+// const container = document.querySelector("body");
 
 const btn = document.querySelector(".btn");
 
