@@ -11,10 +11,12 @@ const container = document.querySelector("body");
 const btn = document.querySelector(".btn");
 
  const clickMe = () => {
-
+    const NewPeople = People.map((person)=> {
+        console.log(person);
+    })
  }
- 
-btn.addEventListener("click", ()=>{
 
+btn.addEventListener("click", ()=>{
+    clickMe();
 })
 
