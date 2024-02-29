@@ -1,10 +1,7 @@
 // js
 
-const people = [
-    {name: "Zainab", lastmane:"Turkmen", age:"21"},
-    {name: "joe", lastmane:"anderson", age:"22"},
-    {name: "su", lastmane:"susi", age:"23"},
-];
+import { people } from "./utils/js.js";
+console.log(people)
 
 const container = document.querySelector(".container");
 
