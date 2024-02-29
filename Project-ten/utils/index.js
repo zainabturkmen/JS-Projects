@@ -1,15 +1,12 @@
 // js
 
 import { people } from "./utils/js.js";
-console.log(people)
+import {clickMe} from "./utils/data.js"
 
 const container = document.querySelector(".container");
-
 const btn = document.querySelector(".btn");
 
-
-
 btn.addEventListener("click", ()=>{
-    clickMe();
+    container.innerHTML = clickMe(people);
 });
 
