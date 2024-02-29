@@ -1,6 +1,6 @@
 // js
 
-const People = [
+const people = [
     {name: "Zainab", lastmane:"Turkmen", age:"21"},
     {name: "joe", lastmane:"anderson", age:"22"},
     {name: "su", lastmane:"susi", age:"23"},
@@ -11,7 +11,7 @@ const People = [
 const btn = document.querySelector(".btn");
 
  const clickMe = () => {
-    const NewPeople = People.map((person)=> {
+    const newPeople = people.map((person)=> {
         console.log(person);
     });
  };
