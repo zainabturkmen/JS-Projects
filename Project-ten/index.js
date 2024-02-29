@@ -13,7 +13,7 @@ const btn = document.querySelector(".btn");
  const clickMe = () => {
     const newPeople = people.map((person)=> {
         const {name, age} = person
-        return
+        return `<p></>`
     });
  };
 
