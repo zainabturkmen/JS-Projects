@@ -19,8 +19,6 @@ const clickMe = () =>{
 }
 
 
-
-
 //  const clickMe = () => {
 //     const newPeople = people.map((person)=> {
 //         const {name, age} = person
