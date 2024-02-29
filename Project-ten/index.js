@@ -6,15 +6,16 @@ const people = [
     {name: "su", lastmane:"susi", age:"23"},
 ];
 
-// const container = document.querySelector("body");
+const container = document.querySelector(".container");
 
 const btn = document.querySelector(".btn");
 
  const clickMe = () => {
     const newPeople = people.map((person)=> {
         const {name, age} = person
-        return `<p></>`
-    });
+        return `<p>${name} ${age}</p>`;
+    }).join("")
+    container.innerHTML = newPeople;
  };
 
 btn.addEventListener("click", ()=>{
