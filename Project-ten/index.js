@@ -10,6 +10,11 @@ const container = document.querySelector(".container");
 
 const btn = document.querySelector(".btn");
 
+const clickMe = () =>{
+    const newPeople= people.map((person)=>{
+    
+    })
+}
 
 
 
