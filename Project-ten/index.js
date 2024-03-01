@@ -12,6 +12,7 @@ const h4 = get(".h4");
 
 btn.addEventListener("click", () => {
     // container.innerHTML = clickMe(people);
+    // callback hell
     setTimeout(()=>{
         h2.style.color= "blue";
         setTimeout(() => {
