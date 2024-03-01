@@ -5,4 +5,5 @@ function getElement(selection){
     }else{
         throw Error("you did not select element")
     }
-}
+};
+export default getElement;
