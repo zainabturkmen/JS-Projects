@@ -16,6 +16,9 @@ btn.addEventListener("click", () => {
         h2.style.color= "blue";
         setTimeout(()=>{
             h3.style.color = "red"
+            setTimeout(()=>{
+                h4.style.color = "green"
+            },3000)
         },2000)
     }, 1000);
 });
