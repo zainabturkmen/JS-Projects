@@ -1,6 +1,6 @@
 // js
 
-// import { people } from "./utils/js.js";
+import { people } from "./utils/js.js";
 import {clickMe} from "./utils/data.js"
 
 const container = document.querySelector(".container");
