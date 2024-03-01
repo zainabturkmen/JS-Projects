@@ -14,7 +14,7 @@ btn.addEventListener("click", () => {
     container.innerHTML = clickMe(people);
     setTimeout(()=>{
         h2.style.color= "blue"
-    }, 1000)
+    }, 1000);
 });
 
 
