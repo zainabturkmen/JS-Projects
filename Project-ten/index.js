@@ -14,10 +14,19 @@ btn.addEventListener("click", () => {
     // container.innerHTML = clickMe(people);
     setTimeout(()=>{
         h2.style.color= "blue";
+        setTimeout(() => {
+            h2.style.backgroundColor = "black"
+        }, 1500);
         setTimeout(()=>{
             h3.style.color = "red"
             setTimeout(()=>{
+                h3.style.backgroundColor = "black"
+            },2500)
+            setTimeout(()=>{
                 h4.style.color = "green"
+                setTimeout(() => {
+                    h4.style.backgroundColor = "black"
+                }, 3500);
             },3000)
         },2000)
     }, 1000);
