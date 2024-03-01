@@ -3,8 +3,8 @@
 const clickMe = (people) =>{
     const newPeople= people
     .map((person)=>{
-    const {name, job} = person;
-    return `<p>${name} ${job}</p>`
+    const {name, age} = person;
+    return `<p>${name} ${age}</p>`
     })
     .join("")
     return newPeople;
