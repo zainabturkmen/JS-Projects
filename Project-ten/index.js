@@ -6,6 +6,7 @@ import get from "./utils/getElement.js"
 
 const container = get(".container");
 const btn = get(".btn");
+const h2 = get(".h2");
 
 btn.addEventListener("click", () => {
     container.innerHTML = clickMe(people);
