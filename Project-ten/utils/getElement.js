@@ -1,4 +1,4 @@
-function getElement(selection){
+export default function (selection){
     const element = document.querySelector(selection);
     if(element){
         return element
@@ -6,4 +6,4 @@ function getElement(selection){
         throw Error("you did not select element")
     }
 };
-export default getElement;
+// export default getElement;
