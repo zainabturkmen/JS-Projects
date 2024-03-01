@@ -13,7 +13,7 @@ const h4 = get(".h4");
 btn.addEventListener("click", () => {
     container.innerHTML = clickMe(people);
     setTimeout(()=>{
-        h2.style.color= "blue"
+        h2.style.color= "blue";
     }, 1000);
 });
 
