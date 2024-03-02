@@ -24,7 +24,7 @@ function addColor(time, element, color){
         }else{
             reject(new Error(`there is no such element ${element}`))
         }
-    })
+    });
 }
 
 // container.innerHTML = clickMe(people);
