@@ -19,7 +19,10 @@ function addColor(time, element, color){
         if(element){
             setTimeout(() => {
                 element.style.color = color
+                resolve()
             }, time);
+        }else{
+            reject(new Error(`there is no such element ${element}`))
         }
     })
 }
