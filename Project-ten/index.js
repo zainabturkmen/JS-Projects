@@ -14,7 +14,15 @@ btn.addEventListener("click", () => {
     addColor(100,h2, "red")
 });
 
-
+function addColor(time, element, color){
+    return new Promise((resolve, reject) => {
+        if(element){
+            setTimeout(() => {
+                element.style.color = color
+            }, time);
+        }
+    })
+}
 
 // container.innerHTML = clickMe(people);
 // callback hell
