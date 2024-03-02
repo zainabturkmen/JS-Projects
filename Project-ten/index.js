@@ -25,7 +25,7 @@ function addColor(time, element, color){
             reject(new Error(`there is no such element ${element}`))
         }
     });
-}
+};
 
 // container.innerHTML = clickMe(people);
 // callback hell
