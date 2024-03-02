@@ -24,7 +24,7 @@ function addColor(time, element, color){
                 resolve();
             }, time);
         }else{
-            reject(new Error(`there is no such element ${element}`))
+            reject(new Error(`there is no such element ${element}`));
         };
     });
 };
