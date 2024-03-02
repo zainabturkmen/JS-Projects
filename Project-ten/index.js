@@ -12,6 +12,8 @@ const h4 = get(".h4");
 
 btn.addEventListener("click", () => {
     addColor(100,h2, "red")
+    .then(() => addColor(200, h3, "green"))
+    .then(() => addColor(300, h4, "blue"))
 });
 
 function addColor(time, element, color){
