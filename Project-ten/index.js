@@ -11,18 +11,27 @@ const h3 = get(".h3");
 const h4 = get(".h4");
 
 btn.addEventListener("click", () => {
+
     addColor(100,h2, "red")
     .then(() => addColor(200, h3, "green"))
     .then(() => addColor(300, h4, "blue"))
+});
+
+btn.addEventListener("dblclick", ()=>{
+    me()
+})
+
+function me(){
     const elementi = document.createElement("h1")
     // const input = document.createElement("input")
     elementi.textContent = "Hey me, Zainab, stuck in tutorail hell 🥹🧑‍💻👊🔪🗡️🍭🍉"
     document.body.innerHTML += `
     <h1 class = "h1h1">${elementi.textContent}</h1>
     <textarea class = "input"></textarea>
-    <h3>characters</h3>
-    `
-});
+    <h3 class="char">characters 0</h3>
+      `
+}
+
 
 function addColor(time, element, color){
     return new Promise((resolve, reject) => {
