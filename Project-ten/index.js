@@ -20,6 +20,7 @@ btn.addEventListener("click", () => {
     document.body.innerHTML += `
     <h1 class = "h1h1">${elementi.textContent}</h1>
     <textarea class = "input"></textarea>
+    <h3>characters</h3>
     `
 });
 
