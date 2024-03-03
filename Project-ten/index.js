@@ -17,9 +17,7 @@ btn.addEventListener("click", () => {
     .then(() => addColor(300, h4, "blue"))
 });
 
-btn.addEventListener("dblclick", ()=>{
-    me()
-})
+
 
 function me(){
     const elementi = document.createElement("h1")
@@ -31,6 +29,10 @@ function me(){
     <h3 class="char">characters 0</h3>
       `
 }
+
+btn.addEventListener("dblclick", ()=>{
+    me();
+})
 
 
 function addColor(time, element, color){
