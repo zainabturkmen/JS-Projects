@@ -17,7 +17,10 @@ btn.addEventListener("click", () => {
     const elementi = document.createElement("h1")
     const input = document.createElement("input")
     elementi.textContent = "Hey me, Zainab, stuck in tutourial hell 🥹🧑‍💻👊🔪🗡️🍭🍉"
-    document.body.innerHTML += `<h1>${elementi.textContent}</h1>`
+    document.body.innerHTML += `
+    <h1 class = "h1h1">${elementi.textContent}</h1>
+    ${input}
+    `
 });
 
 function addColor(time, element, color){
