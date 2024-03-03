@@ -18,3 +18,12 @@ body{
 .h1h1{
     color: blue;
 }
+
+.input{
+    width: 467px;
+    height: 100px;
+    resize: none;
+    padding: 1em;
+    font-size: 1.5em;
+    font-family: sans-serif;
+}

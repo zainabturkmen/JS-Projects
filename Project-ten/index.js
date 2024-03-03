@@ -15,11 +15,11 @@ btn.addEventListener("click", () => {
     .then(() => addColor(200, h3, "green"))
     .then(() => addColor(300, h4, "blue"))
     const elementi = document.createElement("h1")
-    const input = document.createElement("input")
-    elementi.textContent = "Hey me, Zainab, stuck in tutourial hell 🥹🧑‍💻👊🔪🗡️🍭🍉"
+    // const input = document.createElement("input")
+    elementi.textContent = "Hey me, Zainab, stuck in tutorail hell 🥹🧑‍💻👊🔪🗡️🍭🍉"
     document.body.innerHTML += `
     <h1 class = "h1h1">${elementi.textContent}</h1>
-    ${input}
+    <textarea class = "input"></textarea>
     `
 });
 
