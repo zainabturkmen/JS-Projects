@@ -6,4 +6,11 @@ body{
     align-items: center;
 }
 
-.btn
+.btn{
+    padding: 1em 5em;
+    color: white;
+    background-color: rgb(138, 55, 247);
+    border-radius: 10px;
+    border: none;
+    font-size: 1.1em;
+}
