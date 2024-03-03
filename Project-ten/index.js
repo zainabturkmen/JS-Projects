@@ -14,8 +14,8 @@ btn.addEventListener("click", () => {
     addColor(100,h2, "red")
     .then(() => addColor(200, h3, "green"))
     .then(() => addColor(300, h4, "blue"))
-    const elementi = document.createElement("h4")
-    elementi.textContent = "hey hey"
+    const elementi = document.createElement("h1")
+    elementi.textContent = "Hey me, Zainab, stuck in tutourial hell 🥹🧑‍💻👊🔪🗡️🍭🍉"
     document.body.appendChild(elementi)
 
 });
